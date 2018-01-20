@@ -1,9 +1,9 @@
 $(document).ready(function () {
 var options = [
 	{
-		question: "Pupusas, handmade thick stuffed corn tortillas, are a traditional dish from what country?", 
-		choice: ["Ethiopia", "El Salvadore", "Peru", "Guatamala"],
-		answer: 1,
+		question: "What year did Albert Einstein die?", 
+		choice: ["1954", "1960", "1955", "1949"],
+		answer: 2,
 	 },
 	 {
 	 	question: "What popular soda beverage was originally developed as a mixer for whiskey?", 
@@ -16,14 +16,14 @@ var options = [
 		answer: 2,
 	}, 
 	{
-		question: "Which is not an ingredient in a Harvey Wallbanger cocktail?", 
-		choice: ["Orange Juice", "Vodka", "Sour Mix", "Galliano" ],
-		answer: 2,
+		question: "What colour is Cerulean?", 
+		choice: ["Yellow", "Blue", "Red", "Green" ],
+		answer: 1,
 	}, 
 	{
-		question: "How many items are there in a Bakers' Dozen?", 
-		choice: ["12", "6", "24", "13" ],
-		answer: 3,
+		question: "How many countries in South America", 
+		choice: ["20", "15", "14", "16" ],
+		answer: 1,
 	}, 
 	{
 		question: "What is the most widely eaten fish in the world?", 
@@ -39,6 +39,16 @@ var options = [
 		question: "Which fruit contains the most protein per 100 calories?", 
 		choice: ["Guava", "Avocado", "Banana", "Blackberries" ],
 		answer: 0,
+	},
+	{
+		question: "The currents of which Ocean create the El Nino effect?", 
+		choice: ["Pacific", "Atlantic", "Indian", "Artic" ],
+		answer: 0,
+	}, 
+	{
+		question: "Which Desert dominates a large area of Northern Africa?", 
+		choice: ["Kalahari", "Sahara", "Gobi", "Atacama" ],
+		answer: 1,
 	}];
 
 	var timeout = [
@@ -214,7 +224,7 @@ function hidepicture () {
 
 			var hidpic = setTimeout(function() {
 				$("#answerblock").empty();
-				timer= 5;
+				timer= 15;
 
 				//run the score screen if all questions answered
 				if ((wrongCount + correctCount + unanswerCount) === qCount) {
