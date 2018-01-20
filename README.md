@@ -1,33 +1,22 @@
 # Trivia Game
-Week 5 Assignment: Trivia Game
 
-## A Pixar Trivia
+## A General Knowledge Trivia
 
-Created during Week 5 of Rutgers Coding Bootcamp. The challenge was to create a timed trivia game. Only 15 seconds were alotted to each question. After all of the questions were finished, the final scoreboard of how well you did would appear.
+The game shows one question at a time and user will have 15 seconds to anwer. It will have either of the 3 options - Correct, Wrong answer or Timeup. It will be shown through funny emoji images.
 
-## Motivation
 
-I wanted to create a Pixar trivia game that was towards the more difficult side and gave animation buffs a challenge. I also created a simpler version for friends and family after the initial app that can be found here: https://pixartriviajr.herokuapp.com/
 
 ## Getting Started 
-Play here: https://pixartrivia.herokuapp.com/
+Play here: https://shraddhabhatt.github.io/TriviaGame/
 
 ## Screenshots
 
-![Question](assets/images/Question.png)
+![Question](assets/images/question.png)
 Displays time left, question number, and highlights answers on hover.
 
-![Answer-Correct](assets/images/correct.png)
-
-![Answer-Wrong](assets/images/wrong.png)
-Displays answer if answered incorrectly
-
-![Scoreboard](assets/images/Scoreboard.png)
-Final Scoreboard
-
 ## Technologies used
-- Google Fonts
 - Bootstrap
+- Javascripts
 - jQuery
 
 ### Prerequisites
@@ -41,6 +30,7 @@ Final Scoreboard
 
 * Sublime Text - Text Editor
 * Bootstrap- Wireframe
+* HTML/CSS
 
 ## Authors
 
