@@ -1,0 +1,200 @@
+.answerchoice {
+	border: 1px solid black;
+  border-radius: 5%;
+	width: 40%;
+	color: black;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: white;
+
+}
+
+img {
+  max-height: 200px;
+  width: auto;
+}
+img#onloadimg{
+  max-height: 300px;
+  width: auto;
+}
+
+#answerblock {
+  text-align: center;
+}
+
+#questionblock {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#reset {
+  visibility: visible;
+}
+body {
+  font-family: 'Karla', sans-serif;
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  font-size: 45px;
+}
+p {
+  margin: 10px;
+  font-weight: bold;
+  color: red;
+  font-size: 30px;
+}
+h2, h4 {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.header{
+    align-self: center;
+    padding-left: 40%;
+}
+#onloadimg{
+  background-image: url("../images/trivia.jpg"); 
+  width: 250px;
+  height : 450px;
+  position: relative;
+  -webkit-animation:spin 6s linear infinite;
+  -moz-animation:spin 6s linear infinite;
+  animation:spin 6s linear infinite;
+  /*animation: mymove 5s infinite;
+  animation-delay: 2s;*/
+}
+.wrapper {
+  padding: 20px 40px;
+  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #403fd3;
+  height: 500px;
+  width: 60%;
+  text-align: center;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+.btn {
+  position: relative;
+  bottom: -70px;
+}
+#timer{
+    visibility:collapse;
+    float: left;
+    padding-top: 120px;
+}
+.circle{
+    position: relative;
+    width:80px;
+    height:80px;
+    background:#ecf0f1;
+    border:solid 5px #2c3e50;
+    border-radius:100%;
+    overflow:hidden;
+    animation: rotates 15s infinite linear;
+    -webkit-animation: rotates 15s infinite linear;
+}
+.up{
+    width: 30px;
+    height: 40px;
+    left:25px;
+    overflow:hidden;
+    background:#cef;
+    position:absolute;
+}
+.up:before,.up:after{
+    content:"";
+    width:30px;height:30px;
+    background:#ecf0f1;
+    position:absolute;
+    z-index:1;
+}
+.up:before{
+    top:30px;
+    left:-17px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.up:after{
+    top:30px; left:17px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.innera{
+    position:relative;
+    top:15px;
+    width:30px;height:30px;
+    background:#f1c40f;
+    animation: mymove 15s infinite linear;
+    -webkit-animation: mymove 15s infinite linear;
+}
+.down{
+    width: 30px;
+    height: 40px;
+    left:25px;
+    top:40px;
+    overflow:hidden;
+    background:#cef;
+    position:absolute;
+    z-index:1;
+}
+.down:before,.down:after{
+    content:"";
+    width:30px;
+    height:40px;
+    background:#ecf0f1;
+    position:absolute;
+    z-index:1;
+}
+.down:before{
+    top:-25px;
+    left:-17px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.down:after{
+    top:-25px;
+    left:24px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.innerb{
+    position:relative;
+    top:40px;
+    width:30px;height:30px; background:#f1c40f;
+    animation: mymoveb 15s infinite linear;
+    -webkit-animation: mymoveb 15s infinite linear;
+}
+@keyframes mymove{
+    0%{top:15px;}
+    100%{top:45px;}
+}
+@keyframes mymoveb{
+    0%{top:40px;}
+    90%{top:20px;}
+    100%{top:-5px;}
+}
+@keyframes rotates{
+    0%{transform:rotate(0deg);}
+    80%{transform:rotate(0deg);}
+    100%{transform:rotate(180deg);}
+}
+@-webkit-keyframes mymove{
+    0%{top:15px;}
+    100%{top:45px;}
+}
+@-webkit-keyframes mymoveb{
+    0%{top:40px;}
+    90%{top:20px;}
+    100%{top:-5px;}
+}
+@-webkit-keyframes rotates{
+    0%{-webkit-transform:rotate(0deg);}
+    80%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(180deg);}
+}
