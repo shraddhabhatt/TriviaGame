@@ -12,7 +12,7 @@ Play here: https://shraddhabhatt.github.io/TriviaGame/
 ## Screenshots
 
 ![Question](assets/images/question.png)
-Displays time left, question number, and highlights answers on hover.
+Displays time left, question, and highlights option choosen on hover.
 
 ## Technologies used
 - Bootstrap
